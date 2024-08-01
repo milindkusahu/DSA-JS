@@ -18,3 +18,4 @@ function searchTarget(n, target, arr) {
 }
 
 console.log(searchTarget(5, 7, [1, 3, 5, 7, 13]));
+// Output: 3

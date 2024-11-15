@@ -124,5 +124,38 @@ console.log(reverseInteger(1234));
 ![1731679487306](image/readme/1731679487306.png)
 
 ```
+function sentenceCapitalization(str) {
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
+console.log(sentenceCapitalization("hello world")); // Hello World
+console.log(sentenceCapitalization("milind sahu")); // Milind Sahu
+```
+
+## FizzBuzz
+
+![1731687519790](image/readme/1731687519790.png)
 
 ```
+function fizzBuzz(num) {
+  for (let i = 1; i <= num; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log("Fizz");
+    } else if (i % 5 === 0) {
+      console.log("Buzz");
+    } else {
+      console.log(i);
+    }
+  }
+}
+```
+
+## Max Profit
+
+![1731688217272](image/readme/1731688217272.png)

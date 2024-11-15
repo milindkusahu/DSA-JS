@@ -109,14 +109,20 @@ console.log(isPalindrome("Hello"));
 
 ## Reverse Integer
 
-functionreverseInteger(int) {
-
-  letreversed = int.toString().split("").reverse().join("");
-
-  letnum = Number(reversed);
-
-  returnnum;
-
+```
+function reverseInteger(int) {
+  let reversed = int.toString().split("").reverse().join("");
+  let num = Number(reversed);
+  return num;
 }
 
 console.log(reverseInteger(1234));
+```
+
+## Sentence Capitalization
+
+![1731679487306](image/readme/1731679487306.png)
+
+```
+
+```

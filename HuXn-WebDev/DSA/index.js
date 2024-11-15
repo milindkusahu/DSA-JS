@@ -39,10 +39,24 @@
 
 // Reverse Integer
 
-function reverseInteger(int) {
-  let reversed = int.toString().split("").reverse().join("");
-  let num = Number(reversed);
-  return num;
-}
+// function reverseInteger(int) {
+//   let reversed = int.toString().split("").reverse().join("");
+//   let num = Number(reversed);
+//   return num;
+// }
 
-console.log(reverseInteger(1234));
+// console.log(reverseInteger(1234));
+
+// Sentence Capitalization
+
+// function sentenceCapitalization(str) {
+//   return str
+//     .toLowerCase()
+//     .split(" ")
+//     .map((word) => word[0].toUpperCase() + word.slice(1))
+//     .join(" ");
+// }
+
+// console.log(sentenceCapitalization("hello world")); // Hello World
+// console.log(sentenceCapitalization("milind sahu")); // Milind Sahu
+

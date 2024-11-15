@@ -62,3 +62,29 @@ function findPairs(arr) {
 ```
 
 ![1731676595459](image/readme/1731676595459.png)
+
+## Arrays
+
+![1731676982703](image/readme/1731676982703.png)
+
+### Array Methods
+
+1. push()
+2. get()
+3. pop()
+4. shift()
+5. unshift()
+
+## Reverse String
+
+```
+const str = "Hello";
+let newStr = "";
+
+for (let i = str.length - 1; i >= 0; i--) {
+  newStr += str[i];
+}
+
+console.log(newStr);
+
+```

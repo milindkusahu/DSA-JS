@@ -88,3 +88,35 @@ for (let i = str.length - 1; i >= 0; i--) {
 console.log(newStr);
 
 ```
+
+## Palindromes
+
+![1731678501630](image/readme/1731678501630.png)
+
+```
+function isPalindrome(str) {
+  let reverseStr = str.split("").reverse().join("");
+  if (reverseStr === str) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isPalindrome("cddc"));
+console.log(isPalindrome("Hello"));
+```
+
+## Reverse Integer
+
+functionreverseInteger(int) {
+
+  letreversed = int.toString().split("").reverse().join("");
+
+  letnum = Number(reversed);
+
+  returnnum;
+
+}
+
+console.log(reverseInteger(1234));

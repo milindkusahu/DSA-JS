@@ -80,17 +80,40 @@
 
 // Max Profit
 
-function maxProfit(prices) {
-  let minPrice = prices[0];
-  let maxProfit = 0;
+// function maxProfit(prices) {
+//   let minPrice = prices[0];
+//   let maxProfit = 0;
 
-  for (let i = 1; i < prices.length; i++) {
-    const currentPrice = prices[i];
-    minPrice = Math.min(minPrice, currentPrice);
-    const highestProfit = currentPrice - minPrice;
-    maxProfit = Math.max(maxProfit, highestProfit);
+//   for (let i = 1; i < prices.length; i++) {
+//     const currentPrice = prices[i];
+//     minPrice = Math.min(minPrice, currentPrice);
+//     const highestProfit = currentPrice - minPrice;
+//     maxProfit = Math.max(maxProfit, highestProfit);
+//   }
+//   return maxProfit;
+// }
+
+// console.log(maxProfit([7, 1, 5, 3, 6, 4]));
+
+// Array Chunks
+
+// Array slice() Function:
+const arr = ["Milind", "Mukul", "Shashwat", "Shubham"];
+console.log(arr.slice(0, 2 + 1)); // slice(start index, end index)
+
+// Array splice() Function:
+console.log(arr.splice(2, 1, "Shashwat", "Rahul")); // splice (index, how many delete, "new value")
+
+const chunk = (array, size) => {
+  const chunked = [];
+  let index = 0;
+
+  while (index < array.length) {
+    const chunk = array.slice(index, index + size);
+    chunked.push(chunk);
+    index += size;
   }
-  return maxProfit;
-}
+  return chunked;
+};
 
-console.log(maxProfit([7, 1, 5, 3, 6, 4]));
+console.log(chunk([1, 2, 3, 4, 5, 6, 7, 8], 3));

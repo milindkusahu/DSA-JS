@@ -7,3 +7,6 @@ function fibonacci(n) {
 
 console.log(fibonacci(3));
 
+// TC: O(2^n)
+// SC: O(n) --> Due to creation of Stack
+

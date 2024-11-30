@@ -3,6 +3,7 @@
  */
 
 function facorial(n) {
+  // 0! => 1 (imp)
   if (n === 0) {
     return 1;
   }

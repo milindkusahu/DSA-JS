@@ -1,9 +1,9 @@
 function reverse(num) {
   let reversed = 0;
 
-  while (n > 0) {
-    rev = rev * 10 + (n % 10); // Get last digit
-    n = Math.floor(n / 10);
+  while (num > 0) {
+    reversed = reversed * 10 + (num % 10); // Get last digit
+    num = Math.floor(num / 10);
   }
   return reversed;
 }

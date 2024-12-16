@@ -36,23 +36,18 @@ function reverseStr(s) {
 
   let word = "";
   let sentence = "";
-  let len = s.length;
 
-  for (let i = len - 1; i >= 0; i--) {
+  for (let i = s.length - 1; i >= 0; i--) {
     if (s[i] == " ") {
-      if (word.length !== 0) {
-        sentence = sentence + word + " ";
+      if (word.length != 0) {
+        sentence += word + " ";
         word = "";
       }
     } else {
       word = s[i] + word;
     }
   }
-  // Add the final word if exists
-  if (word.length > 0) {
-    sentence = sentence + word;
-  }
-
+  sentence += word;
   return sentence.trim();
 }
 

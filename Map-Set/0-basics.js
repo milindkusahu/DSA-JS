@@ -49,7 +49,7 @@ console.log(map.clear());
  * Space Complexity => O(n) -> Number of keys present in the Set
  *
  * CRUD Operations:
- * set(value) -> Adds a new value to the set. TC: O(1)
+ * add(value) -> Adds a new value to the set. TC: O(1)
  * has(value) -> Returns a boolean indicating whether the specified value is present in the set. TC: O(1)
  * delete(value) -> Removes the specified value from the set. TC: O(1)
  * clear() -> Removes all values from the set. TC -> O(n)

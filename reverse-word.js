@@ -30,10 +30,11 @@ The given words after being reversed gives:world hello
 Your reversed string should not contain leading or trailing spaces.
 */
 
-function reverseStr(s) {
-  // let result = s.split(" ").reverse().join(" ");
-  // return result;
+// Brute Force Approach
+// let result = s.split(" ").reverse().join(" ");
+// return result;
 
+function reverseStr(s) {
   let word = "";
   let sentence = "";
 

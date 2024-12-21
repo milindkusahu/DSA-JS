@@ -17,20 +17,37 @@ function rotatebyOne(nums) {
 
 // Left rotate the Array by D Places
 
-function rotatebyDPlaces(nums) {
-  let temp = nums[0];
-  let temp2 = nums[1];
-  let n = nums.length;
+function rotatebyDPlaces(arr, d) {
+  // Brute Force
+  let n = arr.length;
+  d = d % n;
 
-  for (let i = 2; i < n; i++) {
-    nums[i - 2] = nums[i];
+  let temp = [];
+
+  for (let i = 0; i < d; i++) {
+    // O(n)
+    temp[i] = arr[i];
   }
-  nums[n - 2] = temp;
-  nums[n - 1] = temp2;
-  return nums;
+
+  for (let i = d; i < n; i++) {
+    // O(n)
+    arr[i - d] = arr[i];
+  }
+
+  for (let i = n - d; i < n; i++) {
+    // O(n)
+    arr[i] = temp[i - (n - d)];
+  }
+  return arr;
 }
 
-console.log(rotatebyDPlaces([1, 2, 3, 4, 5, 6, 7])); // [3, 4, 5, 6, 7, 1, 2];
+// TC: O(d) + O(n-d) + O(d) => O(n+d) | SC: O(d)
+
+function rotatebyDPlacesOptimize(arr, d) {
+  
+}
+
+console.log(rotatebyDPlaces([1, 2, 3, 4, 5, 6, 7], 2)); // [3, 4, 5, 6, 7, 1, 2];
 
 // Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
 

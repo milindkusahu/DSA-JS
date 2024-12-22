@@ -53,4 +53,3 @@ function reverseStr(s) {
 }
 
 console.log(reverseStr("hello world"));
-console.log(reverseStr("   ab   xy   cde"));
